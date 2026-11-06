@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+     <script src="https://cdn.datatables.net/3.1.4/js/dataTables.min.js"></script>
+     <link  rel="stylesheet" href="https://cdn.datatables.net/3.1.4/css/dataTables.dataTables.min.css"></link>
+</head>
+<body>
+    
+    <table id="submit-table" class="display">
+        <thead>
+            <tr>
+                <th>Name:</th>
+                 <th>Last Name:</th>
+                <th>Job Title:</th>
+                <th>Company:</th>
+                <th>LinkedIn URL:</th>
+                <th>How did we meet:</th>
+                <th>Other:</th>
+                <th>Message:</th>
+                <th>Mailing List:</th>
+                <th>Email Format:</th>
+                <th>Date and Time:</th>
+
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <% submits.forEach(submit => { %>
+        <tr>
+            <td> <%=submit.fname%> </td>
+             <td> <%=submit.lname%> </td>
+            <td><%= submit.jobTitle%></td>
+            <td><%= submit.company%></td>
+            <td> <%=submit.Linkedin%></td>
+            <td><%= submit.HDWM%></td>
+            <td><%= submit.other%></td>
+             <td><%= submit.message%></td>
+             <td><%= submit.email%></td>
+            <td> <%= submit.emailFormat%></td>
+            <p>Date and Time: <%= submit.timestamp.toLocaleString()%></p>
+
+        </tr>
+   <% }); %>
+        </tbody>
+    </table>
+    <script>
+        new DataTable('#submit-table')
+    </script>
+</body>
+</html>

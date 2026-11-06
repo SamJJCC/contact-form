@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm</title>
+
+   
+</head>
+<body>
+    <h1>Confirmation page</h1>
+    <!-- displays submit object -->
+
+    <p>Name: <%=submit.fname%> <%=submit.lname%></p>
+    <p>Job Title: <%= submit.jobTitle%></p>
+     <p>Company: <%= submit.company%> </p>
+     <p>LinkedIn URL: <%=submit.Linkedin%> </p>
+    <p>How did we meet?: <%= submit.HDWM%></p>
+    <p>Other: <%= submit.other%></p>
+    <p>Message: <%= submit.message%></p>
+    <p>Mailing List: <%= submit.email%></p>
+     <p>Email Format: <%= submit.emailFormat%></p>
+    <p>Date and Time: <%= submit.timestamp.toLocaleString()%></p>
+
+        <a id="back-button" href="/" role="button">Back to home</a> 
+</body>
+</html>

@@ -19,7 +19,7 @@ document.getElementById("contact-form").onsubmit = () => {
 
     // mailing list validation
     let mailListSelected = false;
-    let mailList = document.getElementById("mail-list");
+    let mailList = document.getElementById("mailList");
 
     if (mailList.checked) {
         mailListSelected = true;
