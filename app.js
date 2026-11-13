@@ -17,7 +17,9 @@ app.use(express.urlencoded({extended:true}));
 app.get('/', (req, res) => {
   res.render('home');
 });
-
+app.get('/contact-form', (req, res) => {
+  res.render('contact-form');
+});
 
 app.post('/submit-form',(req,res)=>{
     // create a json object to store order data
