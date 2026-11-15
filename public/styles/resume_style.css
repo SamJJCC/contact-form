@@ -1,0 +1,117 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding:1.5rem 5rem 1.5rem 5rem;
+    line-height:1.7;
+    letter-spacing: 0.5px;
+    margin: auto;
+    background-color: rgb(255, 254, 248);
+    max-width: 1000px;
+    margin:auto;
+}
+
+:root{
+    --primary:rgb(53,76,60);
+    --secondary:rgb(102,123,104);
+}
+h1{
+    font-size: 28px;
+    color: var(--primary)}
+
+h2{
+    font-size: 24px;
+    color: var(--primary);
+}
+h3{
+    font-size: 20px;
+    color: var(--secondary);
+}
+#header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#header-info{
+    display: flex;
+   justify-content:space-evenly;
+   font-weight:600;
+  color: var(--secondary)
+  
+}
+
+
+img{
+    width:140px;
+    height: 140px;
+    border-radius: 50%;
+  
+}
+#partials-header{
+   display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+a:hover,
+a:focus{
+    
+    text-decoration: underline;
+    color: rgb(53, 76, 60);
+}
+/* seperation lines */
+#Summary ,#education,#skills,#projects,#Awards-Scholarships{
+    padding:1rem 0;
+    border-bottom:1px solid rgb(102,123,104);
+}
+#project-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    line-height:2;
+}
+#project-cards{
+   border:1px solid rgb(102,123,104);
+   border-radius:10px;
+   padding:20px;
+}
+ul{
+    list-style-type: none;
+}
+/* changing bulletpoints */
+li::before{
+    content: "\26AC";
+    margin-right:0.5rem ;
+    color:var(--secondary)
+}
+#project-cards p{
+    color: rgb(144, 146, 146);
+}
+section{
+    padding:1rem 0;
+    border-bottom:1px solid rgb(102,123,104);
+    width:500px;
+}
+@media(max-width:600px) {
+    #body{
+        padding:1rem;
+        font-size: 16px;
+        width: 50%;
+    }
+       #header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+     #header-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    #project-cont{
+        grid-template-columns:1fr;
+    }
+}
