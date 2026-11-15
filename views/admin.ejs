@@ -8,9 +8,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
      <script src="https://cdn.datatables.net/3.1.4/js/dataTables.min.js"></script>
      <link  rel="stylesheet" href="https://cdn.datatables.net/3.1.4/css/dataTables.dataTables.min.css"></link>
+      <link rel= "Stylesheet" href="styles/admin_style.css">
 </head>
 <body>
-    <%- include('partials/header') %>
+    <div id="partials-header"> <%- include('partials/header') %></div>
     <table id="submit-table" class="display">
 
 
@@ -46,7 +47,7 @@
              <td><%= submit.message%></td>
              <td><%= submit.email%></td>
             <td> <%= submit.emailFormat%></td>
-            <p>Date and Time: <%= submit.timestamp.toLocaleString()%></p>
+            <td>Date and Time: <%= submit.timestamp.toLocaleString()%></td>
 
         </tr>
    <% }); %>

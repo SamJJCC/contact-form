@@ -27,7 +27,6 @@ app.post('/submit-form',(req,res)=>{
     submit['timestamp']=new Date();
     console.log(submit);
 
-    // add order object to orders array
     submits.push(submit);
     console.log(submits);
     res.render('confirm',{submit});

@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>confirm</title>
-
+     <link rel= "Stylesheet" href="styles/confirm_style.css">
    
 </head>
 <body>
-    <%- include('partials/header') %>
+     <div id="partials-header"> <%- include('partials/header') %></div>
+     <div id="main">
     <h1>Confirmation page</h1>
     <!-- displays submit object -->
+    
 
     <p>Name: <%=submit.fname%> </p>
     <p> Last Name: <%=submit.lname%> </p>
@@ -25,5 +27,6 @@
     <p>Date and Time: <%= submit.timestamp.toLocaleString()%></p>
 
         <a id="back-button" href="/" role="button">Back to home</a> 
+        </div>
 </body>
 </html>
