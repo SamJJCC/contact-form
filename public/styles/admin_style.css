@@ -1,0 +1,17 @@
+#partials-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2rem;
+    font-size:20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(53, 76, 60);
+}
+a:hover,
+a:focus{
+    
+    text-decoration: underline;
+    color:rgb(102,123,104);
+}
